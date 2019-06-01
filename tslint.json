@@ -1,0 +1,69 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js",
+      "**/*.d.ts",
+      "**/*.json"
+    ]
+  },
+  "jsRules": {
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "log"
+      ]
+    },
+    "member-ordering": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false
+  },
+  "rules": {
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "log"
+      ]
+    },
+    "member-access": false,
+    "interface-over-type-literal": false,
+    "jsx-boolean-value": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "max-classes-per-file": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "member-ordering": false,
+    "no-empty": false
+  },
+  "rulesDirectory": []
+}
